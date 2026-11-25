@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "india-gov-data-mcp"
-version = "0.2.0"
+version = "0.2.1"
 description = "MCP server for India's Open Government Data portal (api.data.gov.in) — discover, inspect, query, and aggregate 150 000+ public datasets via any AI agent."
 readme = "README.md"
 license = {text = "MIT"}
