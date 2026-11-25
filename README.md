@@ -22,9 +22,9 @@ The portal hosts public datasets across central and state bodies at national, st
 
 ### Examples of What You Can Search
 With this MCP server connected to your AI agent, you can ask natural-language questions instead of hunting through dataset IDs manually:
-* *"Check today's mandi prices for gram in Andhra Pradesh or cumin and groundnut in Gujarat."*
-* *"Pull the latest real-time AQI and PM2.5 readings across monitoring stations in Ahmedabad."*
-* *"Search `data.gov.in` datasets for air quality, agriculture, or public schemes, inspect the schema, and export a CSV summary."*
+* **Road safety:** *"Search `data.gov.in` for state-wise road accident datasets, inspect the schema, and summarize trends for Gujarat."*
+* **Infrastructure & utilities:** *"Find state-level energy or water datasets, join them by state, and export a CSV summary."*
+* **Education & economy:** *"Search education or economic datasets, filter by state or category, and include a citation."*
 
 ---
 
