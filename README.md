@@ -9,6 +9,25 @@ Open-source Model Context Protocol (MCP) server giving AI agents direct, queryab
 
 ---
 
+## What Is `data.gov.in` & What Can You Search?
+
+**`data.gov.in`** is the **Open Government Data (OGD) Platform India**, set up by the **National Informatics Centre (NIC)** under the **Ministry of Electronics and Information Technology (MeitY)** in line with the **National Data Sharing and Accessibility Policy (NDSAP)**. It serves as a single-window portal where central ministries, departments, and state governments publish shareable, non-sensitive public datasets and APIs—generally made available under the **Government Open Data License – India (GODL)**—for research, analytics, journalism, and application building.
+
+### What Data It Provides
+The portal hosts public datasets across central and state bodies at national, state, and district levels across domains such as:
+* **Agriculture & Markets:** Daily wholesale APMC mandi prices, arrivals, varieties, grades, and agricultural statistics.
+* **Environment & Monitoring:** Real-time/station-level Air Quality Index (AQI) and pollutant readings (such as CPCB monitoring stations) as well as water and environmental datasets.
+* **Governance, Schemes & Infrastructure:** Public schemes, development indicators, transport, energy, and regional records.
+* **Economy & Social Sectors:** Finance, health, education, demographic, and sectoral datasets.
+
+### Examples of What You Can Search
+With this MCP server connected to your AI agent, you can ask natural-language questions instead of hunting through dataset IDs manually:
+* *"Check today's mandi prices for gram in Andhra Pradesh or cumin and groundnut in Gujarat."*
+* *"Pull the latest real-time AQI and PM2.5 readings across monitoring stations in Ahmedabad."*
+* *"Search `data.gov.in` datasets for air quality, agriculture, or public schemes, inspect the schema, and export a CSV summary."*
+
+---
+
 ## Why We Built This
 
 Connecting LLMs directly to `api.data.gov.in` typically fails in four ways. `india-gov-data-mcp` solves each of them at the protocol layer:
