@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# DuckDB temp files
+*.duckdb
+*.wal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite cache
+*.db
+catalog_cache.db

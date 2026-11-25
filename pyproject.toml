@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "india-gov-data-mcp"
+version = "0.2.0"
+description = "MCP server for India's Open Government Data portal (api.data.gov.in) — discover, inspect, query, and aggregate 150 000+ public datasets via any AI agent."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "india-gov-data-mcp Contributors"}]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "httpx>=0.27.0",
+    "duckdb>=1.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+india-gov-data-mcp = "datagov_mcp.server:main"
+datagov-sync-catalog = "datagov_mcp.indexer:main"
+
+[project.urls]
+Homepage = "https://github.com/tirthharshi-debug/India-gov-data-MCP"
+Repository = "https://github.com/tirthharshi-debug/India-gov-data-MCP"
+Issues = "https://github.com/tirthharshi-debug/India-gov-data-MCP/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/datagov_mcp"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
